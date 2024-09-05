@@ -1,18 +1,22 @@
-body{
-    background-color: aliceblue;
-    background-size: cover;
-}
+
 #loginForm{
-width: 20%;
-margin-left: 38%;
-/* margin-top: 4%; */
+width: 30%;
+margin-left: 5%;
+
+border-radius: 4%;
+background-color: #6EACDA;
+padding: 8px;
 
 }
+.navbar{
+background-color:#6EACDA ;
+height: 4%;
+}
 .nav-item{
-    border: 2px solid rgb(131, 42, 233);
+    border: 2px solid #03346E);
     margin-right: 9px;   
 }
 
 .head{
-    text-align: center;
+    margin-left: 16%;
 }
