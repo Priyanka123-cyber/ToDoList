@@ -7,13 +7,15 @@ function fetchTodos() {
     fetch('https://jsonplaceholder.typicode.com/todos?_limit=10')
         .then(response => response.json())
         .then(todos => {
-            todos.forEach((todo, index) => {
+            todos.forEach(todo => {
                 // Create a list item for each todo
                 const li = document.createElement('li');
                 li.className = 'list-group-item d-flex justify-content-between align-items-center'; // Use 'align-items-center'
 
                 // Create a text node for the todo title
-                const todoText = document.createTextNode(todo.title);
+                const todoText = document.createElement('span');
+                todoText.className = 'todo-text'; // Apply the CSS class
+                todoText.textContent = todo.title;
 
                 // Checkbox to mark the todo as completed
                 const checkbox = document.createElement('input');
